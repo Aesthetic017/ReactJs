@@ -1,14 +1,14 @@
 import React from 'react'
 import CenterLeft from './centerLeft'
-import CenterRight from './centerRight'
+import CenterRight from './CenterRight'
 
-const center = () => {
+const Center = (props) => {
   return (
-    <div className='py-12 flex gap-10 items-center px-18  h-[90vh]'>
+    <div className='pb-20 flex gap-10 items-center px-18  h-[90vh]'>
       <CenterLeft/>
-      <CenterRight/>
+      <CenterRight users={props.users}/>
     </div>
   )
 }
 
-export default center
+export default Center
